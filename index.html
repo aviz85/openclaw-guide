@@ -689,7 +689,7 @@
                     <h2>מה זה OpenClaw?</h2>
                 </div>
                 <div class="card">
-                    <p>OpenClaw היא תוכנת קוד פתוח (Open Source) שמשמשת כ<strong>שכבת ניצוח (Orchestrator)</strong> מעל מודל שפה. כמו מנצח שמוביל תזמורת — OpenClaw מנהלת את המודל ומשתמשת בו לביצוע משימות אוטונומיות.</p>
+                    <p><a href="https://openclaw.ai" target="_blank" style="color: var(--accent-blue); text-decoration: none; border-bottom: 1px solid rgba(79,143,255,0.3);">OpenClaw</a> היא תוכנת קוד פתוח (Open Source) שמשמשת כ<strong>שכבת ניצוח (Orchestrator)</strong> מעל מודל שפה. כמו מנצח שמוביל תזמורת — OpenClaw מנהלת את המודל ומשתמשת בו לביצוע משימות אוטונומיות.</p>
                     <p>הבוט חי ברקע 24/7, זוכר שיחות, מבצע משימות מתוזמנות, ויכול לפנות אליך ביוזמתו. הוא יכול לכתוב סקריפטים, להשתמש בכלים, ולשרשר פעולות — הכל בלי התערבות.</p>
                 </div>
 
@@ -756,10 +756,10 @@
                 <div class="step-card">
                     <div class="step-number">1</div>
                     <h3>🏗️ הקמת VPS</h3>
-                    <p>בסרטון נעשה שימוש ב-<strong>Hostinger</strong> — ספק VPS עם מחירים מצוינים.</p>
+                    <p>בסרטון נעשה שימוש ב-<a href="https://www.hostinger.com/vps-hosting" target="_blank" style="color: var(--accent-blue); text-decoration: none; border-bottom: 1px solid rgba(79,143,255,0.3);"><strong>Hostinger</strong></a> — ספק VPS עם מחירים מצוינים.</p>
                     <ul class="feature-list">
                         <li>מיקום: גרמניה (latency ~57ms מישראל)</li>
-                        <li>מערכת הפעלה: Debian 13 (Plain OS)</li>
+                        <li>מערכת הפעלה: <a href="https://www.debian.org" target="_blank" style="color: var(--accent-blue); text-decoration: none; border-bottom: 1px solid rgba(79,143,255,0.3);">Debian 13</a> (Plain OS)</li>
                         <li>תוכנית: KVM2 (~$7/חודש) — פי 2 ביצועים</li>
                         <li>בחירת סיסמת root חזקה — שכבת אבטחה ראשונה</li>
                     </ul>
@@ -783,7 +783,7 @@
                 <!-- Step 3 -->
                 <div class="step-card">
                     <div class="step-number">3</div>
-                    <h3>🛡️ התקנת VPN — Tailscale</h3>
+                    <h3>🛡️ התקנת VPN — <a href="https://tailscale.com" target="_blank" style="color: var(--accent-cyan); text-decoration: none; border-bottom: 1px solid rgba(6,214,160,0.3);">Tailscale</a></h3>
                     <p>רשת פרטית וירטואלית שמבודדת את השרת מהרשת הציבורית. חינמית ונדיבה.</p>
                     <div class="code-block">
                         <code><span class="comment"># התקנה על השרת</span><br>curl -fsSL https://tailscale.com/install.sh | sh<br><br><span class="comment"># הפעלה עם SSH</span><br>tailscale up --ssh</code>
@@ -814,9 +814,9 @@
                     <h3>🧱 הגדרת חומת אש (Firewall)</h3>
                     <p>SSH הוא לא הדלת היחידה — Database, Nginx, כלי ניטור פותחים פורטים נוספים. חומת אש חוסמת הכל חוץ מ-VPN.</p>
                     <ul class="feature-list">
-                        <li>Hostinger Panel → Security → Firewall</li>
+                        <li><a href="https://www.hostinger.com/vps-hosting" target="_blank" style="color: var(--accent-blue); text-decoration: none; border-bottom: 1px solid rgba(79,143,255,0.3);">Hostinger</a> Panel → Security → Firewall</li>
                         <li>יצירת Firewall חדש + Activate</li>
-                        <li>חריגה: UDP port 41641 (Tailscale) מ-Anywhere</li>
+                        <li>חריגה: UDP port 41641 (<a href="https://tailscale.com" target="_blank" style="color: var(--accent-blue); text-decoration: none; border-bottom: 1px solid rgba(79,143,255,0.3);">Tailscale</a>) מ-Anywhere</li>
                         <li>Synchronize לסנכרון עם השרת</li>
                     </ul>
                 </div>
@@ -826,12 +826,12 @@
                 <!-- Step 6 -->
                 <div class="step-card">
                     <div class="step-number">6</div>
-                    <h3>🦀 התקנת OpenClaw</h3>
+                    <h3>🦀 התקנת <a href="https://openclaw.ai" target="_blank" style="color: var(--accent-blue); text-decoration: none; border-bottom: 1px solid rgba(79,143,255,0.3);">OpenClaw</a></h3>
                     <p>אחרי כל שכבות האבטחה — ההתקנה עצמה קלילה.</p>
                     <ul class="feature-list">
-                        <li>פקודת התקנה ללינוקס מ-openclaw.ai</li>
+                        <li>פקודת התקנה ללינוקס מ-<a href="https://openclaw.ai" target="_blank" style="color: var(--accent-blue); text-decoration: none; border-bottom: 1px solid rgba(79,143,255,0.3);">openclaw.ai</a></li>
                         <li>התקנות נלוות: Node.js, Git (~1.5 דקות)</li>
-                        <li>קונפיגורציה: Manual → Local Gateway → Anthropic/OpenAI</li>
+                        <li>קונפיגורציה: Manual → Local Gateway → <a href="https://www.anthropic.com" target="_blank" style="color: var(--accent-blue); text-decoration: none; border-bottom: 1px solid rgba(79,143,255,0.3);">Anthropic</a>/<a href="https://openai.com" target="_blank" style="color: var(--accent-blue); text-decoration: none; border-bottom: 1px solid rgba(79,143,255,0.3);">OpenAI</a></li>
                         <li>חיבור טוקן: <span class="mono">claude setup --token</span></li>
                         <li>מודל ברירת מחדל: Opus 4.6 (אפשר להחליף לסונט לחיסכון)</li>
                     </ul>
@@ -843,9 +843,9 @@
                 <div class="step-card">
                     <div class="step-number">7</div>
                     <h3>💬 חיבור טלגרם</h3>
-                    <p>יצירת בוט דרך @BotFather וחיבורו ל-OpenClaw.</p>
+                    <p>יצירת בוט דרך <a href="https://t.me/BotFather" target="_blank" style="color: var(--accent-blue); text-decoration: none; border-bottom: 1px solid rgba(79,143,255,0.3);">@BotFather</a> וחיבורו ל-OpenClaw.</p>
                     <ul class="feature-list">
-                        <li>@BotFather → <span class="mono">/newbot</span> → בחירת שם (מסתיים ב-<span class="mono">_bot</span>)</li>
+                        <li><a href="https://t.me/BotFather" target="_blank" style="color: var(--accent-blue); text-decoration: none; border-bottom: 1px solid rgba(79,143,255,0.3);">@BotFather</a> → <span class="mono">/newbot</span> → בחירת שם (מסתיים ב-<span class="mono">_bot</span>)</li>
                         <li>קבלת access token → הזנה בקונפיגורציה</li>
                         <li><span class="mono">/start</span> בבוט → קבלת User ID + Pairing code</li>
                         <li>פקודת חיבור סופית בטרמינל עם הקוד</li>
